@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+img {
+    border: 2px solid black;
+    filter: blur(10px);
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1;
+}
+
+img#ui {
+  border: 2px solid black;
+  filter: none;
+  transform: scale(1.5);
+  position: fixed; 
+  height: 150%;
+  left: 0px; 
+  top: 0px; 
+  z-index: -1;
+}
+
+#container {
+    position: relative;    
+}
+
+
+
+ /* #example {  
+  position: absolute;
+  top: 10px;  
+  left: 10px;  
+    
+   padding: 10px;
+   background-color: white;
+   border: 2px solid red;
+ } */
+
+/* #center { 
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  vertical 
+/* } */
+
+/* .container { 
+    float: center;
+  position: relative;
+  border: 3px solid green; 
+} */
+
+ /* Title Box */
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40%;
+}
+ 
+.center {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  margin: auto;
+  width: 50%;
+  border: 3px solid black;
+  padding: 10px;
+  text-align: center;
+  float: center;
+  background: white;
+  transform: translateY(-50%);
+}
+
+div.a {
+  font-size: 200%;
+}
+
+/* Second Box */
+.cente {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  margin: auto;
+  width: 50%;
+  border: 3px solid black;
+  padding: 10px;
+  text-align: center;
+  float: center;
+  background: white;
+  transform: translateY(90%);
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+}
+
+div.b {
+  font-size: 110%;
+}
+
+.animate-character
+{
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 25px;
+  transform: translateY(-10%);
+
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-family: 'Alfa Slab One', cursive;
+  
+  display: inline-block;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+#ui { /*This is an ID selector so the code inside the {} brackets applies only to the UI image */
+
+    /* Add a filter none property */
+    filter: none;
+  
+    /* Add a margin top of ~200px */
+    margin-top: 200px;
+}
+
+
